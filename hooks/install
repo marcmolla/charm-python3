@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+import setup
+setup.pre_install()
+
+from charmhelpers.core import hookenv
+
+
+def install():
+    hookenv.log('Installing <Charm name>')
+
+
+if __name__ == "__main__":
+    install()
